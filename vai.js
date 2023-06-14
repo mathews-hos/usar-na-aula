@@ -14,4 +14,6 @@ process.stdin.on('data', (input) => {
 
 
     //AQUI
+
+    process.stdin.pause();
 });
