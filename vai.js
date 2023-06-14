@@ -1,19 +1,34 @@
+// process.stdin.setEncoding('utf8');
+
+// console.log('Por favor, digite sua entrada: ');
+// var max
+// process.stdin.once('data', (input) => {
+//     console.log(`Você digitou: ${input}`);
+//     max = input
+//     abe(max)
+//     process.stdin.pause
+// });
+// function abe(max) {
+//     for (let i = 0; i <= max; i++) {
+//         console.log(i)
+
+//     }
+
+// }
 process.stdin.setEncoding('utf8');
 
-console.log('Por favor, digite sua entrada: ');
-var max
-process.stdin.on('data', (input) => {
-    console.log(`Você digitou: ${input}`);
-    max = parseInt(input)
-    // AQUI
-    for (let i = 0; i < max; i++) {
-        console.log(i)
+function getInput() {
+    return new Promise((resolve) => {
+        process.stdin.once('data', (input) => {
+            resolve(input.trim());
+        });
+    });
+}
 
-    }
+async function main() {
+    // use await getInput() para entrada
 
 
 
-    //AQUI
-
-    process.stdin.pause();
-});
+}
+main()
