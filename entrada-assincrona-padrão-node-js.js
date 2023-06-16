@@ -7,7 +7,7 @@ function prompt() {
         });
     });
 }
-sair = false
+
 async function main() {
 
     // digite seu código aqui :D
