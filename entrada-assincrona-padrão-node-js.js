@@ -10,10 +10,10 @@ function prompt() {
 sair = false
 async function main() {
 
-
+    // digite seu código aqui :D
     // use await getInput() para entrada
+    
     console.log(await prompt()) //exemplo
 
-    main()
 }
 main()
